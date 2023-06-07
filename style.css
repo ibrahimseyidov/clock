@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&display=swap');
+
+.azClock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.hour-contain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.hour {
+    color: #fff;
+    position: relative;
+    font-size: 100px;
+    margin-left: -5px;
+    padding-right: 29px;
+}
+
+.hour::before,
+.hour::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+
+.hour::before {
+    right: 50%;
+}
+
+.hour::after {
+    left: 50%;
+}
+
+.minute {
+    color: #fff;
+    font-size: 100px;
+}
+
+.minute::before,
+.minute::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+
+.minute::before {
+    right: 50%;
+}
+
+.minute::after {
+    left: 50%;
+}
